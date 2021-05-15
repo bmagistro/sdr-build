@@ -1,24 +1,24 @@
 [submodule "poky"]
 	path = poky
 	url = git://git.yoctoproject.org/poky
-	branch = zeus
+	branch = dunfell
 [submodule "meta-openembedded"]
 	path = meta-openembedded
 	url = git://git.openembedded.org/meta-openembedded
-	branch = zeus
+	branch = dunfell
 [submodule "meta-security"]
 	path = meta-security
 	url = git://git.yoctoproject.org/meta-security
-	branch = zeus
+	branch = dunfell
 [submodule "meta-ettus"]
 	path = meta-ettus
-	url = https://github.com/EttusResearch/meta-ettus.git
-	branch = zeus
+	url = https://github.com/bmagistro/meta-ettus.git
+	branch = dunfell
 [submodule "meta-sdr"]
 	path = meta-sdr
 	url = https://github.com/balister/meta-sdr.git
-	branch = zeus
+	branch = dunfell
 [submodule "meta-qt5"]
 	path = meta-qt5
 	url = https://github.com/meta-qt5/meta-qt5.git
-	branch = zeus
+	branch = dunfell
