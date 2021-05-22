@@ -1,0 +1,20 @@
+[submodule "poky"]
+	path = poky
+	url = git://git.yoctoproject.org/poky
+	branch = fido
+[submodule "meta-openembedded"]
+	path = meta-openembedded
+	url = git://git.openembedded.org/meta-openembedded
+	branch = fido
+[submodule "meta-xilinx"]
+	path = meta-xilinx
+	url = git://github.com/Xilinx/meta-xilinx
+	branch = fido
+[submodule "meta-ettus"]
+	path = meta-ettus
+	url = https://github.com/EttusResearch/meta-ettus.git
+	branch = fido
+[submodule "meta-sdr"]
+	path = meta-sdr
+	url = https://github.com/balister/meta-sdr.git
+	branch = fido
