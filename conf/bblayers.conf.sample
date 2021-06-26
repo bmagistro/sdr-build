@@ -12,10 +12,7 @@ BBLAYERS ?= " \
   ##COREBASE##/../meta-openembedded/meta-python \
   ##COREBASE##/../meta-openembedded/meta-filesystems \
   ##COREBASE##/../meta-openembedded/meta-networking \
-  ##COREBASE##/../meta-security/meta-tpm \
-  ##COREBASE##/../meta-ettus/meta-ettus-core \
-  ##COREBASE##/../meta-ettus/meta-alchemy \
-  ##COREBASE##/../meta-ettus/meta-e31x \
+  ##COREBASE##/../meta-raspberrypi \
   ##COREBASE##/../meta-qt5 \
   ##COREBASE##/../meta-sdr \
   "

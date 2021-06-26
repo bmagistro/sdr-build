@@ -34,7 +34,7 @@
 #MACHINE ?= "edgerouter"
 #
 # This sets the default machine to be qemux86-64 if no other machine is selected:
-MACHINE ??= "qemux86-64"
+MACHINE ??= "raspberrypi3-64"
 
 #
 # Where to place downloads
@@ -266,15 +266,13 @@ PACKAGECONFIG_append_pn-qemu-system-native = " sdl"
 # this doesn't mean anything to you.
 CONF_VERSION = "1"
 
-DISTRO = "Alchemy"
-DISTRO_FEATURES_append = " systemd"
-MACHINE = "ni-e31x-sg3"
-#INHERIT += "mender-full"
-#MENDER_ARTIFACT_NAME = "v4.0.0.0_e310_sg3"
-#IMAGE_ROOTFS_EXTRA_SPACE = "0"
-#IMAGE_FSTYPES += "ext4"
-EXTRA_IMAGE_FEATURES = "dbg-pkgs tools-debug debug-tweaks"
-WKS_FILE="sdimage-8G.wks"
-IMAGE_FSTYPES += "wic.gz wic.bmap"
+MACHINE = "raspberrypi3-64"
+DISTRO_FEATURES_append = " opengl x11"
+#EXTRA_IMAGE_FEATURES = "dbg-pkgs tools-debug debug-tweaks"
+PACKAGECONFIG_pn-gnuradio = "qtgui5 grc zeromq logging"
+PACKAGECONFIG_pn-gr-osmosdr = "rtl-sdr hackrf rfspace bladerf"
+
+#WKS_FILE="sdimage-8G.wks"
+#IMAGE_FSTYPES += "wic.gz wic.bmap"
 
 export REQUESTS_CA_BUNDLE

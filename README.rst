@@ -11,21 +11,11 @@ Getting Started
 #. Check out the appropriate branch:
 
   $ cd sdr-build
-  $ git checkout -b dunfell-ettus origin/dunfell-ettus
+  $ git checkout -b dunfell-pi origin/dunfell-pi
 
 #. Update the submodules:
 
   $ git submodule update --init
-
-#. Backport gcc-8.3
-
-   There is a known issue in this release with fftw and the included version of gcc.
-   This change has not been applied in testing yet but is included for reference.
-   In addition, `GCCVERSION = "8.%"` will need to be added to the `build/local.conf` file.
-
-   See https://github.com/EttusResearch/uhd/issues/396 for more details.
-
-   $ tar -zxf backport-gcc-8.3.tgz
 
 #. Initialize the build system:
 
